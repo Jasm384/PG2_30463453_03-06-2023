@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P2NBGMK6M1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P2NBGMK6M1');
+</script>
+
+
+<!-- Cierre de lo de Google-->
+
+<script async src="https://www.google.com/recaptcha/api.js"></script>
+
+
+<script>
+  function onSubmit(token) {
+    document.getElementById("demo-form").submit();
+  }
+</script>
+
+<script>
+  var recaptcha_response = '';
+  function submitUserForm() {
+     if(recaptcha_response.length == 0) {
+         document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">Debes Completar el reCaptcha.</span>';
+         return false;
+      }
+        return true;
+  }
+
+  function verifyCaptcha(token) {
+      recaptcha_response = token;
+      document.getElementById('g-recaptcha-error').innerHTML = '';
+  }
+</script>
+
+
+<!-- Google Recapcha-->
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CV Julian Sojo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/stylesheets/aos.css?ver=1.1.0" rel="stylesheet">
+    <link href="/stylesheets/bootstrap.min.css?ver=1.1.0" rel="stylesheet">
+    <link href="/stylesheets/main.css?ver=1.1.0" rel="stylesheet">
+    <noscript>
+      <style type="text/css">
+        [data-aos] {
+            opacity: 1 !important;
+            transform: translate(0) scale(1) !important;
+        }
+      </style>
+    </noscript>
+  </head>
+
+  <body id="top" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+  
